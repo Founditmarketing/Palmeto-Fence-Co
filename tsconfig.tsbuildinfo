@@ -1,0 +1,1 @@
+{"root":["./app.tsx","./constants.ts","./index.tsx","./types.ts","./vite.config.ts","./components/about.tsx","./components/aiassistant.tsx","./components/contact.tsx","./components/footer.tsx","./components/hero.tsx","./components/navbar.tsx","./components/services.tsx","./components/testimonials.tsx","./services/geminiservice.ts"],"version":"5.8.3"}
