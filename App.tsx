@@ -13,6 +13,7 @@ import HomePage from './src/pages/HomePage';
 import VinylFencing from './src/pages/VinylFencing';
 import WoodFencing from './src/pages/WoodFencing';
 import AluminumFencing from './src/pages/AluminumFencing';
+import CommercialFencing from './src/pages/CommercialFencing';
 
 const App: React.FC = () => {
   const [isAiOpen, setIsAiOpen] = useState(false);
@@ -29,6 +30,7 @@ const App: React.FC = () => {
               <Route path="/services/vinyl" element={<VinylFencing />} />
               <Route path="/services/wood" element={<WoodFencing />} />
               <Route path="/services/aluminum" element={<AluminumFencing />} />
+              <Route path="/services/commercial" element={<CommercialFencing />} />
             </Routes>
           </main>
 

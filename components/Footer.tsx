@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
             <h4 className="font-bold text-lg mb-4 text-accent-500">Services</h4>
             <ul className="space-y-2 text-brand-100 text-sm">
               <li><a href="/services/wood" className="hover:text-white transition-colors">Residential Privacy</a></li>
-              <li><a href="/#contact" className="hover:text-white transition-colors">Commercial Security</a></li>
+              <li><a href="/services/commercial" className="hover:text-white transition-colors">Commercial Security</a></li>
               <li><a href="/services/wood" className="hover:text-white transition-colors">Custom Woodwork</a></li>
               <li><a href="/services/vinyl" className="hover:text-white transition-colors">Vinyl Fencing</a></li>
               <li><a href="/services/aluminum" className="hover:text-white transition-colors">Aluminum Fencing</a></li>

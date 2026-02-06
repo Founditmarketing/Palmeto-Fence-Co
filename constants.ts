@@ -24,7 +24,7 @@ export const SERVICES: Service[] = [
     description: 'Secure your business assets with durable chain link, security gates, and industrial-grade aluminum solutions.',
     icon: Warehouse,
     image: 'https://picsum.photos/id/184/800/600',
-    href: '/#contact',
+    href: '/services/commercial',
   },
   {
     id: 'custom',

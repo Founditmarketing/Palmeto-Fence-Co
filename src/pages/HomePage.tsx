@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Hero from '../../components/Hero';
 import About from '../../components/About';
+import FenceGallery from '../../components/FenceGallery';
 import Services from '../../components/Services';
 import ServiceAreas from '../../components/ServiceAreas';
 import FAQ from '../../components/FAQ';
@@ -59,6 +60,7 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenAI }) => {
 
             <Hero onOpenAI={onOpenAI} />
             <About />
+            <FenceGallery />
             <Services />
             <ServiceAreas />
             <FAQ />
