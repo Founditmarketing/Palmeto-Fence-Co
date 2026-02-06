@@ -18,7 +18,7 @@ const Services: React.FC = () => {
           {SERVICES.map((service) => (
             <div
               key={service.id}
-              className="group relative bg-white rounded-xl overflow-hidden border border-stone-100 shadow-sm hover:shadow-2xl hover:shadow-brand-900/10 transition-all duration-500 hover:-translate-y-2 flex flex-col"
+              className="group relative bg-white rounded-2xl overflow-hidden border border-stone-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(93,140,93,0.1)] transition-all duration-500 hover:-translate-y-1 flex flex-col"
             >
               <div className="h-64 overflow-hidden relative">
                 <div className="absolute inset-0 bg-stone-900/20 group-hover:bg-transparent transition-colors z-10"></div>

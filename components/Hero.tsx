@@ -11,14 +11,14 @@ const Hero: React.FC<HeroProps> = ({ onOpenAI }) => {
       {/* Background Image with Cinematic Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://picsum.photos/id/190/1920/1080"
-          alt="Beautiful wooded backyard fence"
+          src="/hero-dreamy.png"
+          alt="Beautiful wooded backyard fence with hydrangeas and sunlight"
           className="w-full h-full object-cover scale-105"
         />
-        {/* Dual gradient for readability */}
-        <div className="absolute inset-0 bg-stone-900/20"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-900/90 via-brand-800/50 to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-900/80 via-transparent to-transparent"></div>
+        {/* Warm, Dreamy Overlay - Sage & Gold */}
+        <div className="absolute inset-0 bg-stone-900/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-900/80 via-brand-800/40 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-900/70 via-accent-900/10 to-transparent"></div>
       </div>
 
       {/* Content */}
@@ -39,12 +39,12 @@ const Hero: React.FC<HeroProps> = ({ onOpenAI }) => {
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-medium text-white leading-[1.15] mb-10 drop-shadow-lg">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-medium text-white leading-[1.15] mb-10 drop-shadow-md tracking-tight">
             Defining Boundaries, <br />
-            <span className="text-brand-100 italic">Elevating Style.</span>
+            <span className="text-brand-100 italic font-light">Elevating Style.</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-brand-50 mb-12 font-light max-w-xl leading-relaxed border-l-2 border-accent-400 pl-6">
+          <p className="text-lg md:text-xl text-brand-50 mb-12 font-light max-w-xl leading-relaxed border-l-2 border-accent-400/50 pl-6 backdrop-blur-sm">
             Serving Waycross and Southeast Georgia with premium fencing solutions. We blend Southern hospitality with industrial-grade durability.
           </p>
 
