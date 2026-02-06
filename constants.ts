@@ -2,11 +2,11 @@ import { ShieldCheck, Ruler, Trees, Warehouse } from 'lucide-react';
 import { Service, Testimonial, NavLink } from './types';
 
 export const NAV_LINKS: NavLink[] = [
-  { name: 'Home', href: '#home' },
-  { name: 'About Us', href: '#about' },
-  { name: 'Services', href: '#services' },
-  { name: 'Reviews', href: '#reviews' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Home', href: '/#home' },
+  { name: 'About Us', href: '/#about' },
+  { name: 'Services', href: '/#services' },
+  { name: 'Reviews', href: '/#reviews' },
+  { name: 'Contact', href: '/#contact' },
 ];
 
 export const SERVICES: Service[] = [
@@ -16,6 +16,7 @@ export const SERVICES: Service[] = [
     description: 'Transform your backyard into a private sanctuary. We specialize in wood shadowbox, vinyl privacy, and decorative aluminum fencing.',
     icon: Trees,
     image: 'https://picsum.photos/id/122/800/600',
+    href: '/services/wood',
   },
   {
     id: 'commercial',
@@ -23,6 +24,7 @@ export const SERVICES: Service[] = [
     description: 'Secure your business assets with durable chain link, security gates, and industrial-grade aluminum solutions.',
     icon: Warehouse,
     image: 'https://picsum.photos/id/184/800/600',
+    href: '/#contact',
   },
   {
     id: 'custom',
@@ -30,6 +32,7 @@ export const SERVICES: Service[] = [
     description: 'Hand-crafted wood fences designed to match your home’s architecture. From picket to post-and-rail.',
     icon: Ruler,
     image: 'https://picsum.photos/id/204/800/600',
+    href: '/services/wood',
   },
   {
     id: 'vinyl',
@@ -37,6 +40,7 @@ export const SERVICES: Service[] = [
     description: 'Premium vinyl fencing that withstands the Georgia heat without fading, cracking, or warping. Lifetime warranty options.',
     icon: ShieldCheck,
     image: 'https://picsum.photos/id/250/800/600',
+    href: '/services/vinyl',
   },
 ];
 

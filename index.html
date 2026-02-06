@@ -1,63 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Palmetto Fence Co. | Waycross, GA</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              brand: {
-                50: '#f2fcf5',
-                100: '#e1f8e8',
-                200: '#c3efd2',
-                300: '#94e0b3',
-                400: '#5cc990',
-                500: '#34ae75',
-                600: '#238c5b',
-                700: '#1e6f4b', // Primary Brand Green
-                800: '#1b583e',
-                900: '#174835',
-                950: '#0c281e',
-              },
-              accent: {
-                50: '#fffbf0',
-                100: '#fff6d6',
-                200: '#ffeaa3',
-                300: '#ffda66',
-                400: '#ffc32e',
-                500: '#f9a607', // Gold/Amber Accent
-                600: '#dd8202',
-                700: '#b75d03',
-                800: '#94480c',
-                900: '#793b0e',
-              }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palmetto Fence Co. | Top-Rated Fence Company Waycross & Southeast GA</title>
+  <meta name="description"
+    content="Woman-Owned & Locally Operated Fence Contractor serving Waycross and Southeast Georgia. Premium wood, vinyl, and aluminum fencing solutions. Call for a free estimate." />
+  <meta name="keywords"
+    content="Fence Company Waycross, Southeast Georgia Fencing, Woman Owned Business, Fence Contractor, Privacy Fence, Vinyl Fence, Palmetto Fence Co" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://palmetto-fence-co.vercel.app/" />
+  <meta property="og:title" content="Palmetto Fence Co. | Elegant Fencing Solutions" />
+  <meta property="og:description"
+    content="Defining Boundaries, Elevating Style. Expert residential and commercial fencing in Southeast Georgia." />
+  <meta property="og:image" content="https://picsum.photos/id/190/1200/630" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FenceContractor",
+      "name": "Palmetto Fence Co.",
+      "image": "https://picsum.photos/id/190/1920/1080",
+      "telephone": "(912) 555-0199",
+      "email": "hello@palmettofenceco.com",
+      "url": "https://palmetto-fence-co.vercel.app/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Waycross",
+        "addressRegion": "GA",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 31.2136,
+        "longitude": -82.3540
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "areaServed": [
+        "Waycross",
+        "Ware County",
+        "Blackshear",
+        "Southeast Georgia"
+      ],
+      "priceRange": "$$",
+      "description": "Woman-Owned & Locally Operated Fence Company providing premium residential and commercial fencing in Southeast Georgia."
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#F5F7F5',
+              100: '#E6EBE6',
+              200: '#CAD4CA',
+              300: '#AEC0AE',
+              400: '#839D83',
+              500: '#5D8C5D', // Sage Green
+              600: '#4A6F4A',
+              700: '#3A5A40', // Deep Sage (Primary)
+              800: '#2C4230',
+              900: '#1F3323',
+              950: '#0E1A11',
             },
-            fontFamily: {
-              sans: ['Montserrat', 'sans-serif'],
-              serif: ['Playfair Display', 'serif'],
-            }
+            accent: {
+              50: '#FCFBF4',
+              100: '#F9F6E6',
+              200: '#F0EAC5',
+              300: '#E6DCA0',
+              400: '#DCC875',
+              500: '#D4AF37', // Elegant Champagne Gold
+              600: '#AA8C2C',
+              700: '#806821',
+              800: '#5C4A18',
+              900: '#3D3110',
+            },
+            stone: {
+              50: '#FAF9F6', // Off-White / Cream
+              100: '#F5F4F0',
+              200: '#EBE9E1',
+              300: '#D8D5C8',
+              400: '#BDB9AA',
+              500: '#9E9A8A', // Warm Grey
+              600: '#7F7B6D',
+              700: '#625F53',
+              800: '#48463D',
+              900: '#312F29',
+            },
+          },
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
           }
         }
       }
-    </script>
-    <style>
-      /* Smooth scrolling for anchor links */
-      html {
-        scroll-behavior: smooth;
-      }
-      .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-      }
-      .scrollbar-hide {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-      }
-    </style>
+    }
+  </script>
+  <style>
+    /* Smooth scrolling for anchor links */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
   <script type="importmap">
 {
   "imports": {
@@ -71,8 +144,10 @@
 </script>
 
 </head>
-  <body class="bg-stone-50 text-stone-800 font-sans antialiased selection:bg-brand-200 selection:text-brand-900">
-    <div id="root"></div>
+
+<body class="bg-stone-50 text-stone-800 font-sans antialiased selection:bg-brand-200 selection:text-brand-900">
+  <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>

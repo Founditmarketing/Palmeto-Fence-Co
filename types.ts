@@ -6,6 +6,7 @@ export interface Service {
   description: string;
   icon: LucideIcon;
   image: string;
+  href?: string;
 }
 
 export interface Testimonial {
