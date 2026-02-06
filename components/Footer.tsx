@@ -15,9 +15,14 @@ const Footer: React.FC = () => {
               </div>
               <span className="font-serif font-bold text-2xl tracking-tight">Palmetto<span className="text-brand-500">Fence</span></span>
             </a>
-            <p className="text-brand-200 text-sm leading-relaxed">
+            <p className="text-brand-200 text-sm leading-relaxed mb-4">
               Proudly serving Waycross, GA with premium fencing solutions. Woman-owned, community focused, quality driven.
             </p>
+            <div className="text-brand-300 text-sm space-y-1">
+              <p>Waycross, GA 31501</p>
+              <p><a href="tel:+19125550199" className="hover:text-white">(912) 555-0199</a></p>
+              <p><a href="mailto:hello@palmettofenceco.com" className="hover:text-white">hello@palmettofenceco.com</a></p>
+            </div>
           </div>
 
           <div className="col-span-1">
