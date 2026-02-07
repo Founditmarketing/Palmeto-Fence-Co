@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { motion } from 'framer-motion';
 import Hero from '../../components/Hero';
+import TrustBar from '../../components/TrustBar';
 import About from '../../components/About';
+import Process from '../../components/Process';
 import FenceGallery from '../../components/FenceGallery';
 import Services from '../../components/Services';
 import ServiceAreas from '../../components/ServiceAreas';
@@ -59,8 +62,27 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenAI }) => {
             </Helmet>
 
             <Hero onOpenAI={onOpenAI} />
-            <About />
-            <FenceGallery />
+            <TrustBar />
+
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+            >
+                <About />
+            </motion.div>
+
+            <Process />
+
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+            >
+                <FenceGallery />
+            </motion.div>
             <Services />
             <ServiceAreas />
             <FAQ />
