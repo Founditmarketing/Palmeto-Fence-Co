@@ -5,22 +5,26 @@ const FenceGallery: React.FC = () => {
         {
             title: "Wood Privacy",
             description: "Classic Shadowbox & Board-on-Board",
-            image: "https://picsum.photos/id/128/600/400"
+            image: "https://picsum.photos/id/128/600/400",
+            href: "/services/wood"
         },
         {
             title: "Vinyl (PVC)",
             description: "Maintenance-Free White & Tan",
-            image: "https://picsum.photos/id/250/600/400"
+            image: "https://picsum.photos/id/250/600/400",
+            href: "/services/vinyl"
         },
         {
             title: "Chain Link",
             description: "Residential & Commercial Grade",
-            image: "https://picsum.photos/id/184/600/400"
+            image: "https://picsum.photos/id/184/600/400",
+            href: "/services/commercial"
         },
         {
             title: "Aluminum",
             description: "Ornamental Black Estate Fencing",
-            image: "https://picsum.photos/id/192/600/400"
+            image: "https://picsum.photos/id/192/600/400",
+            href: "/services/aluminum"
         }
     ];
 
@@ -36,7 +40,7 @@ const FenceGallery: React.FC = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {styles.map((style) => (
-                        <div key={style.title} className="group relative overflow-hidden rounded-xl aspect-[4/3] shadow-md hover:shadow-xl transition-all duration-500">
+                        <a key={style.title} href={style.href} className="group relative overflow-hidden rounded-xl aspect-[4/3] shadow-md hover:shadow-xl transition-all duration-500 block cursor-pointer">
                             <img
                                 src={style.image}
                                 alt={`${style.title} Fence`}
@@ -48,7 +52,7 @@ const FenceGallery: React.FC = () => {
                                     {style.description}
                                 </p>
                             </div>
-                        </div>
+                        </a>
                     ))}
                 </div>
             </div>

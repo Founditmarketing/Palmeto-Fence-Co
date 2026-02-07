@@ -21,19 +21,25 @@ const Services: React.FC = () => {
               className="group relative bg-white rounded-2xl overflow-hidden border border-stone-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(93,140,93,0.1)] transition-all duration-500 hover:-translate-y-1 flex flex-col"
             >
               <div className="h-64 overflow-hidden relative">
-                <div className="absolute inset-0 bg-stone-900/20 group-hover:bg-transparent transition-colors z-10"></div>
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute top-4 right-4 z-20 bg-white/90 backdrop-blur p-3 rounded-lg shadow-sm text-brand-700">
-                  <service.icon size={20} />
-                </div>
+                <a href={service.href || "#contact"} className="block w-full h-full cursor-pointer">
+                  <div className="absolute inset-0 bg-stone-900/20 group-hover:bg-transparent transition-colors z-10"></div>
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute top-4 right-4 z-20 bg-white/90 backdrop-blur p-3 rounded-lg shadow-sm text-brand-700">
+                    <service.icon size={20} />
+                  </div>
+                </a>
               </div>
 
               <div className="p-8 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold text-stone-900 mb-3 font-serif">{service.title}</h3>
+                <h3 className="text-xl font-bold text-stone-900 mb-3 font-serif">
+                  <a href={service.href || "#contact"} className="hover:text-brand-700 transition-colors">
+                    {service.title}
+                  </a>
+                </h3>
                 <p className="text-stone-500 text-sm leading-relaxed mb-6 flex-grow border-b border-stone-100 pb-4 border-dashed">
                   {service.description}
                 </p>
